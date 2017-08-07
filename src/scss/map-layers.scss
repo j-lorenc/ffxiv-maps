@@ -1,0 +1,57 @@
+.map-layers-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.map-layers{
+    align-items: center;
+}
+
+
+.layer{
+    padding: 3px;
+    font-size: 13px;
+    color: rgb(255,243,209);
+    text-shadow: -1px -1px 0 rgb(54,40,0), 1px -1px 0 rgb(54,40,0), -1px 1px 0 rgb(54,40,0), 1px 1px 0 rgb(54,40,0);
+    
+}
+
+.sublayer{
+    margin-top:3px;
+    margin-left: 1em;
+}
+
+.checkbox{
+    display: inline-block;
+    position: relative;
+    
+    input[type=checkbox] {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+
+    }
+    
+    label{
+        cursor: pointer;
+        width: 14px;
+        height: 14px;
+        background: url("/assets/ui/uld/checkboxa.tex.png") -1px,0;
+        margin: 0px 5px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    input[type=checkbox]:checked + label::before {
+        content: " ";
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        background: url("/assets/ui/uld/checkboxa.tex.png") -17px,0;
+        z-index: 4;
+
+    }
+}
+

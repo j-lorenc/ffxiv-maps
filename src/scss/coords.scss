@@ -1,0 +1,21 @@
+.coords-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    position: relative;
+    
+    .coords {
+        position: absolute;
+        z-index: 2001;
+        top: -20px;
+        background-color: rgba(0,0,0,0.75);
+        padding: 5px;
+        margin: 4px;
+        border-radius: 3px;
+        color: rgb(255,237,188);
+        text-shadow: -1px -1px 0 rgb(54,40,0), 1px -1px 0 rgb(54,40,0), -1px 1px 0 rgb(54,40,0), 1px 1px 0 rgb(54,40,0), -2px -2px 0 rgb(54,40,0), 2px -2px 0 rgb(54,40,0), -2px 2px 0 rgb(54,40,0), 2px 2px 0 rgb(54,40,0);
+        
+        
+    }
+}

@@ -1,0 +1,19 @@
+.leaflet-popup-content-wrapper{
+    color: white;
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.leaflet-popup-content {
+    margin: 3px 3px;
+    line-height: 1.4;
+}
+
+a.leaflet-popup-close-button {
+    display: none;
+}
+
+.leaflet-popup-tip {
+    display: none;
+}
