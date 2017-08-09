@@ -13,7 +13,7 @@ class Layers {
         let layerData = this.map.currentMapData.layers;
             
         let template = layerData.reduce((acc, value) => {
-            acc += `<div class="layer `+value.name+`"><div class="checkbox-container"><div class="checkbox"><input type="checkbox" name="mapLayer" id="`+value.name+`" value="`+value.name+`"><label for="`+value.name+`"/></label></div><span>`+value.displayName+`</span></div>`
+            acc += `<div class="layer `+value.name+`"><div class="checkbox-container"><div class="checkbox"><input type="checkbox" name="mapLayer" id="`+value.name+`" value="`+value.name+`"><label for="`+value.name+`"/></label></div><div class="`+value.name+`-icon"></div><span>`+value.displayName+`</span></div>`
             if(value.layers){
                 acc += this.addSubLayerTemplate(value.layers, value.name);
             }
@@ -33,7 +33,7 @@ class Layers {
     }
     
     generateCheckboxItem(acc, value){
-        acc += `<div class="layer `+value.name+`"><div class="checkbox-container"><div class="checkbox"><input type="checkbox" name="mapLayer" id="`+value.name+`" value="`+value.name+`"><label for="`+value.name+`"/></label></div><span>`+value.displayName+`</span></div>`;
+        acc += `<div class="layer `+value.name+`"><div class="checkbox-container"><div class="checkbox"><input type="checkbox" name="mapLayer" id="`+value.name+`" value="`+value.name+`"><label for="`+value.name+`"/></label></div><div class="`+value.name+`-icon"></div><span>`+value.displayName+`</span></div>`;
         if(value.layers){
             acc += this.addSubLayerTemplate(value.layers, value.name);
         }

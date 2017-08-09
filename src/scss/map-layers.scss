@@ -55,3 +55,42 @@
     }
 }
 
+
+.aetherCurrents-icon{
+    width: 20px;
+    height: 20px;
+    background: url("/assets/map_ui/aether.png") -10px -10px;
+    background-position: center;
+}
+
+.gatheringNodes-icon{
+    width: 20px;
+    height: 20px;
+    background: url("/assets/ui/ui/icon/000000/000023.tex.png") 0px 0px;
+    background-size: cover;
+    margin-right: 3px;
+}
+
+.miningNodes-icon{
+    width: 20px;
+    height: 20px;
+    background: url("/assets/map_ui/mining.png") -7px -7px;
+    background-position: center;
+    
+}
+
+.botanyNodes-icon{
+    width: 20px;
+    height: 20px;
+    background: url("/assets/map_ui/logging.png") -7px -7px;
+    background-position: center;
+}
+
+.fishingWells-icon{
+    width: 20px;
+    height: 20px;
+    background: url("/assets/map_ui/fishing.png") -7px -7px;
+    background-position: center;
+}
+
+
