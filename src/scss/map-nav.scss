@@ -7,12 +7,34 @@ div.map-nav-container{
     background-color: rgba(0,0,0,0.9);  
 }
 
+.zone-header{
+    font-size: 12px;
+    background: linear-gradient(90deg, rgb(142,137,132), rgb(108,102,93));
+    border-radius: 5px;
+    padding: 1px 10px;
+    border-width: 1px;
+    border-style: solid;
+    color: rgb(24,23,22);
+    font-weight: 900;
+    text-shadow: none;
+    box-shadow: 1px 1px 4px #111;
+    
+    cursor: pointer;
+    
+}
+
 ul.map-nav {
     display: inline-block;
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
+    display: relative;
+    
+    
+    &.hide{
+        display: none;
+    }
     
     li{
         display: flex;
@@ -34,16 +56,37 @@ ul.map-nav {
 }
 
 
+
+
 .icon {
     height:20px;
     width:20px;
-    background: url("/assets/ui/uld/teleport.tex.png") -132px 0px;
     display: inline-block;
     margin-right: 5px;
 }
 
+.icon-coerthas {
+    background: url("/assets/ui/uld/teleport.tex.png") -132px 0px;
+}
+
+.icon-other{
+    background: url("/assets/ui/uld/teleport.tex.png") -112px -20px;
+}
+
 .icon-othard {
     background: url("/assets/ui/uld/teleport.tex.png") -112px -20px;
+}
+
+.icon-la-noscea {
+    background: url("/assets/ui/uld/teleport.tex.png") -92px -0px;
+}
+
+.icon-thanalan {
+    background: url("/assets/ui/uld/teleport.tex.png") -92px -20px;
+}
+
+.icon-shroud {
+    background: url("/assets/ui/uld/teleport.tex.png") -112px -0px;
 }
 
 .icon-gyrabania {

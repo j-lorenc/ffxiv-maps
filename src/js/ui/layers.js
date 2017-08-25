@@ -9,16 +9,13 @@ class Layers {
         
     }
     
+    
+    
     render(){
         let layerData = this.map.currentMapData.layers;
             
         let template = layerData.reduce((acc, value) => {
-            acc += `<div class="layer `+value.name+`"><div class="checkbox-container"><div class="checkbox"><input type="checkbox" name="mapLayer" id="`+value.name+`" value="`+value.name+`"><label for="`+value.name+`"/></label></div><div class="`+value.name+`-icon"></div><span>`+value.displayName+`</span></div>`
-            if(value.layers){
-                acc += this.addSubLayerTemplate(value.layers, value.name);
-            }
-            acc += `</div>`;
-            return acc;
+            return this.generateCheckboxItem(acc,value);
         },`<div>`)+`</div>`;
 
         document.getElementsByClassName("map-layers")[0].insertAdjacentHTML("afterbegin",template);
@@ -85,7 +82,7 @@ class Layers {
         })[0];
 
         
-        if(subLayerDiv){
+        if(subLayerDiv){ //handle all checkboxs that belong to a sublayer
             let subLayerInputs = subLayerDiv.getElementsByTagName("input");
             let headerInput = subLayerDiv.parentElement.getElementsByTagName("input")[0];
 
