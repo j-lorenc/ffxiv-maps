@@ -2,7 +2,7 @@
 
 This README outlines the details of collaborating on this application.
 
-This is a map application for the SQUARE ENIX MMORPG, Final Fanatsy XIV. The purpose of this application is to provide an interface to view important inforamtion on various maps in the game. 
+This is a map application for the SQUARE ENIX MMORPG, Final Fanatsy XIV. The purpose of this application is to provide an interface to view important information on various maps in the game. 
 
 ## Prerequisites
 
