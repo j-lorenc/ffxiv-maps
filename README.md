@@ -30,7 +30,7 @@ You will also need to prep your own assets such as map png files, font files and
 
 * `npm run build` (production)
 
-### Deploying
+## Deploying
 
 To deploy this application, copy the source to your server and run `npm run build` in your build directory. If any changes or additions have been made to the assets files, copy those over too.
 
