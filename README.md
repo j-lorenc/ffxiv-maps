@@ -26,7 +26,7 @@ You will also need to prep your own assets such as map png files, font files and
 * `npm start`
 * Visit your app at [http://localhost:3000](http://localhost:3000).
 
-### Building
+## Building
 
 * `npm run build` (production)
 
